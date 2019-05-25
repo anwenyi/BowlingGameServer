@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
 
 public class BowlingServerTest {
     @Test
-    public void testSparkServerRule_HealthcheckRequest() {
+    public void testSparkServerRule_HelloRequest() {
         Client client = ClientBuilder.newBuilder().build();
         Response response = client.target(URI.create("http://localhost:4567/hello"))
                 .request()
